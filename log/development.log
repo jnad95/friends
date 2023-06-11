@@ -1,0 +1,1175 @@
+Started GET "/" for 127.0.0.1 at 2023-05-31 01:07:33 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/adityaja/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/adityaja/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.2ms | Allocations: 773)
+Completed 200 OK in 16ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 9195)
+
+
+Started GET "/" for ::1 at 2023-05-31 01:38:01 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/adityaja/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/adityaja/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.1ms | Allocations: 665)
+Completed 200 OK in 11ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 6689)
+
+
+Started GET "/home" for ::1 at 2023-05-31 01:38:05 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/home/index" for ::1 at 2023-05-31 01:38:08 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 757.8ms | Allocations: 101548)
+Completed 200 OK in 762ms (Views: 760.0ms | ActiveRecord: 0.0ms | Allocations: 102525)
+
+
+Started GET "/home/index" for ::1 at 2023-05-31 01:40:16 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/home/index"):
+  
+Started GET "/" for ::1 at 2023-05-31 01:40:18 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 13917)
+Completed 200 OK in 14ms (Views: 13.0ms | Allocations: 14523)
+
+
+Started GET "/" for ::1 at 2023-05-31 02:04:58 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 114)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2715)
+Completed 200 OK in 13ms (Views: 10.9ms | Allocations: 3684)
+
+
+Started GET "/" for ::1 at 2023-05-31 02:05:57 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 13842)
+Completed 200 OK in 19ms (Views: 18.0ms | Allocations: 14446)
+
+
+Started GET "/home/about" for ::1 at 2023-05-31 02:06:01 +0530
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.8ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 2485)
+Completed 200 OK in 7ms (Views: 6.6ms | Allocations: 2730)
+
+
+Started GET "/home" for ::1 at 2023-05-31 02:06:09 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/about" for ::1 at 2023-05-31 02:06:11 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/about"):
+  
+Started GET "/home/about" for ::1 at 2023-05-31 02:06:16 +0530
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 2716)
+Completed 200 OK in 9ms (Views: 8.2ms | Allocations: 3454)
+
+
+Started GET "/home/about" for ::1 at 2023-05-31 02:09:39 +0530
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 1.8ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 6776)
+Completed 500 Internal Server Error in 27ms (Allocations: 7540)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `header_path' for #<ActionView::Base:0x000000000137b8>
+Did you mean?  headers):
+    13:     <%= javascript_importmap_tags %>
+    14:   </head>
+    15:   <body>
+    16:     <% link_to header_path %>
+    17:     <%= yield %>
+    18:     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    19:   </body>
+  
+app/views/layouts/application.html.erb:16
+Started GET "/home/about" for ::1 at 2023-05-31 02:09:52 +0530
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 1.0ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2730)
+Completed 200 OK in 11ms (Views: 10.2ms | Allocations: 3514)
+
+
+Started GET "/" for ::1 at 2023-05-31 02:09:56 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 114)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2479)
+Completed 200 OK in 7ms (Views: 6.1ms | Allocations: 2779)
+
+
+Started GET "/" for ::1 at 2023-05-31 02:13:14 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 114)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 104)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 2968)
+Completed 200 OK in 19ms (Views: 14.7ms | Allocations: 3935)
+
+
+Started GET "/home/about" for ::1 at 2023-05-31 02:13:27 +0530
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 1.4ms | Allocations: 107)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 2523)
+Completed 200 OK in 14ms (Views: 12.7ms | Allocations: 2769)
+
+
+Started GET "/home/about" for ::1 at 2023-05-31 02:14:01 +0530
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 1.2ms | Allocations: 107)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 216)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3054)
+Completed 200 OK in 13ms (Views: 12.2ms | Allocations: 3837)
+
+
+Started GET "/home/about" for ::1 at 2023-05-31 02:14:04 +0530
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 2435)
+Completed 200 OK in 11ms (Views: 10.0ms | Allocations: 2681)
+
+
+Started GET "/home" for ::1 at 2023-05-31 02:14:05 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/" for ::1 at 2023-05-31 02:14:07 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 114)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 2537)
+Completed 200 OK in 18ms (Views: 15.8ms | Allocations: 2836)
+
+
+Started GET "/" for ::1 at 2023-05-31 02:14:26 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2426)
+Completed 200 OK in 13ms (Views: 10.7ms | Allocations: 2671)
+
+
+Started GET "/" for ::1 at 2023-05-31 02:15:41 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 114)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 216)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 3068)
+Completed 200 OK in 19ms (Views: 13.8ms | Allocations: 4035)
+
+
+Started GET "/" for ::1 at 2023-05-31 02:16:20 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 114)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 169)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 3042)
+Completed 200 OK in 24ms (Views: 22.0ms | Allocations: 4010)
+
+
+Started GET "/" for ::1 at 2023-05-31 02:16:46 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2432)
+Completed 200 OK in 9ms (Views: 7.9ms | Allocations: 2677)
+
+
+Started GET "/" for ::1 at 2023-05-31 02:16:59 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 114)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 165)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 3033)
+Completed 200 OK in 16ms (Views: 13.4ms | Allocations: 4003)
+
+
+Started GET "/" for ::1 at 2023-05-31 02:17:04 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 114)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 165)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3021)
+Completed 200 OK in 8ms (Views: 7.4ms | Allocations: 3988)
+
+
+Started GET "/" for ::1 at 2023-05-31 02:17:12 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 114)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 165)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 3031)
+Completed 200 OK in 7ms (Views: 6.1ms | Allocations: 3998)
+
+
+Started GET "/" for ::1 at 2023-05-31 02:17:24 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 114)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 165)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 3029)
+Completed 200 OK in 12ms (Views: 10.9ms | Allocations: 3996)
+
+
+Started GET "/" for ::1 at 2023-05-31 02:20:57 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 114)
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 251)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 3111)
+Completed 200 OK in 17ms (Views: 13.8ms | Allocations: 4078)
+
+
+Started GET "/" for ::1 at 2023-05-31 02:20:59 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 53)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 2470)
+Completed 200 OK in 10ms (Views: 9.0ms | Allocations: 2717)
+
+
+Started GET "/" for ::1 at 2023-05-31 02:21:01 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 53)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 2464)
+Completed 200 OK in 7ms (Views: 6.1ms | Allocations: 2710)
+
+
+Started GET "/" for ::1 at 2023-05-31 02:21:02 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 53)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 2472)
+Completed 200 OK in 8ms (Views: 6.8ms | Allocations: 2718)
+
+
+Started GET "/" for ::1 at 2023-05-31 02:21:03 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 53)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 2464)
+Completed 200 OK in 7ms (Views: 6.3ms | Allocations: 2710)
+
+
+Started GET "/home/about" for ::1 at 2023-05-31 02:21:09 +0530
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 1.6ms | Allocations: 108)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 58)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2593)
+Completed 200 OK in 12ms (Views: 10.6ms | Allocations: 2839)
+
+
+Started GET "/" for ::1 at 2023-05-31 02:21:09 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 53)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2468)
+Completed 200 OK in 9ms (Views: 7.7ms | Allocations: 2715)
+
+
+Started GET "/" for ::1 at 2023-05-31 02:22:34 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 114)
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 1199)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 4048)
+Completed 500 Internal Server Error in 16ms (Allocations: 4995)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <%= link_to 'Friends App', root_path, class: "navbar-brand"  %>
+    <!-- <a class="" href="#">Friends App</a> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <%= link_to 'About Us', about_path, class: "nav-link", %>
+          <!-- <a class="nav-link" href="#">About Us</a> -->
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+):
+1:    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+2:      <div class="container-fluid">
+3:        <%= link_to 'Friends App', root_path, class: "navbar-brand"  %>
+4:        <!-- <a class="" href="#">Friends App</a> -->
+5:        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+6:          <span class="navbar-toggler-icon"></span>
+7:        </button>
+8:        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+9:          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+10:            <li class="nav-item">
+11:              <%= link_to 'About Us', about_path, class: "nav-link", %>
+12:              <!-- <a class="nav-link" href="#">About Us</a> -->
+13:            </li>
+14:          </ul>
+15:          <form class="d-flex" role="search">
+16:            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+17:            <button class="btn btn-outline-success" type="submit">Search</button>
+18:          </form>
+19:        </div>
+20:      </div>
+21:    </nav>
+  
+app/views/home/_header.html.erb:11: syntax error, unexpected ')'
+app/views/home/_header.html.erb:23: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:11: syntax error, unexpected ')'
+app/views/home/_header.html.erb:23: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:11: syntax error, unexpected ')'
+app/views/home/_header.html.erb:23: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:11: syntax error, unexpected ')'
+app/views/home/_header.html.erb:23: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:11: syntax error, unexpected ')'
+app/views/home/_header.html.erb:23: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:11: syntax error, unexpected ')'
+app/views/home/_header.html.erb:23: syntax error, unexpected `end', expecting ')'
+app/views/layouts/application.html.erb:16
+Started GET "/" for ::1 at 2023-05-31 02:23:25 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 114)
+  Rendered home/_header.html.erb (Duration: 1.2ms | Allocations: 1197)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 4065)
+Completed 500 Internal Server Error in 16ms (Allocations: 5009)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <%= link_to 'Friends App', root_path, class: "navbar-brand"  %>
+    <!-- <a class="" href="#">Friends App</a> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <%= link_to 'About Us', home_about_path, class: "nav-link", %>
+          <!-- <a class="nav-link" href="#">About Us</a> -->
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+):
+1:    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+2:      <div class="container-fluid">
+3:        <%= link_to 'Friends App', root_path, class: "navbar-brand"  %>
+4:        <!-- <a class="" href="#">Friends App</a> -->
+5:        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+6:          <span class="navbar-toggler-icon"></span>
+7:        </button>
+8:        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+9:          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+10:            <li class="nav-item">
+11:              <%= link_to 'About Us', home_about_path, class: "nav-link", %>
+12:              <!-- <a class="nav-link" href="#">About Us</a> -->
+13:            </li>
+14:          </ul>
+15:          <form class="d-flex" role="search">
+16:            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+17:            <button class="btn btn-outline-success" type="submit">Search</button>
+18:          </form>
+19:        </div>
+20:      </div>
+21:    </nav>
+  
+app/views/home/_header.html.erb:11: syntax error, unexpected ')'
+app/views/home/_header.html.erb:23: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:11: syntax error, unexpected ')'
+app/views/home/_header.html.erb:23: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:11: syntax error, unexpected ')'
+app/views/home/_header.html.erb:23: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:11: syntax error, unexpected ')'
+app/views/home/_header.html.erb:23: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:11: syntax error, unexpected ')'
+app/views/home/_header.html.erb:23: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:11: syntax error, unexpected ')'
+app/views/home/_header.html.erb:23: syntax error, unexpected `end', expecting ')'
+app/views/layouts/application.html.erb:16
+Started GET "/" for ::1 at 2023-05-31 02:23:28 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 1.5ms | Allocations: 1187)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 3609)
+Completed 500 Internal Server Error in 11ms (Allocations: 3831)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <%= link_to 'Friends App', root_path, class: "navbar-brand"  %>
+    <!-- <a class="" href="#">Friends App</a> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <%= link_to 'About Us', home_about_path, class: "nav-link", %>
+          <!-- <a class="nav-link" href="#">About Us</a> -->
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+):
+1:    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+2:      <div class="container-fluid">
+3:        <%= link_to 'Friends App', root_path, class: "navbar-brand"  %>
+4:        <!-- <a class="" href="#">Friends App</a> -->
+5:        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+6:          <span class="navbar-toggler-icon"></span>
+7:        </button>
+8:        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+9:          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+10:            <li class="nav-item">
+11:              <%= link_to 'About Us', home_about_path, class: "nav-link", %>
+12:              <!-- <a class="nav-link" href="#">About Us</a> -->
+13:            </li>
+14:          </ul>
+15:          <form class="d-flex" role="search">
+16:            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+17:            <button class="btn btn-outline-success" type="submit">Search</button>
+18:          </form>
+19:        </div>
+20:      </div>
+21:    </nav>
+  
+app/views/home/_header.html.erb:11: syntax error, unexpected ')'
+app/views/home/_header.html.erb:23: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:11: syntax error, unexpected ')'
+app/views/home/_header.html.erb:23: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:11: syntax error, unexpected ')'
+app/views/home/_header.html.erb:23: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:11: syntax error, unexpected ')'
+app/views/home/_header.html.erb:23: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:11: syntax error, unexpected ')'
+app/views/home/_header.html.erb:23: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:11: syntax error, unexpected ')'
+app/views/home/_header.html.erb:23: syntax error, unexpected `end', expecting ')'
+app/views/layouts/application.html.erb:16
+Started GET "/" for ::1 at 2023-05-31 02:23:59 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 114)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 307)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 3171)
+Completed 200 OK in 15ms (Views: 13.1ms | Allocations: 4138)
+
+
+Started GET "/home/about" for ::1 at 2023-05-31 02:24:01 +0530
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.9ms | Allocations: 107)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 96)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 2616)
+Completed 200 OK in 8ms (Views: 7.2ms | Allocations: 2864)
+
+
+Started GET "/" for ::1 at 2023-05-31 02:24:02 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2511)
+Completed 200 OK in 6ms (Views: 5.4ms | Allocations: 2758)
+
+
+Started GET "/home/about" for ::1 at 2023-05-31 02:24:02 +0530
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 2502)
+Completed 200 OK in 7ms (Views: 6.2ms | Allocations: 2749)
+
+
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateFriends (20230531040158)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "friends" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "email" varchar, "phone" varchar, "twitter" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230531040158"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-05-31 04:18:28.866512"], ["updated_at", "2023-05-31 04:18:28.866512"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/home/about" for ::1 at 2023-05-31 09:50:22 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 107)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 296)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 14645)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 15435)
+
+
+Started GET "/" for ::1 at 2023-05-31 09:50:24 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 114)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 96)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2630)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 2930)
+
+
+Started GET "/friends" for ::1 at 2023-05-31 09:50:28 +0530
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.4ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:6
+  Rendered friends/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1010)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3360)
+Completed 200 OK in 14ms (Views: 7.9ms | ActiveRecord: 0.4ms | Allocations: 4588)
+
+
+Started GET "/friends/new" for ::1 at 2023-05-31 09:50:29 +0530
+Processing by FriendsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 4.1ms | Allocations: 3169)
+  Rendered friends/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 3478)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 82)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 5838)
+Completed 200 OK in 28ms (Views: 8.3ms | ActiveRecord: 0.6ms | Allocations: 23088)
+
+
+Started POST "/friends" for ::1 at 2023-05-31 09:50:46 +0530
+Processing by FriendsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "friend"=>{"first_name"=>"Aditya", "last_name"=>"Jain", "email"=>"jn.ad1995@gmail.com", "phone"=>"8982166550", "twitter"=>"jnad95"}, "commit"=>"Create Friend"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/friends_controller.rb:27:in `block in create'
+  [1m[36mFriend Create (0.7ms)[0m  [1m[32mINSERT INTO "friends" ("first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Aditya"], ["last_name", "Jain"], ["email", "jn.ad1995@gmail.com"], ["phone", "8982166550"], ["twitter", "jnad95"], ["created_at", "2023-05-31 04:20:46.578144"], ["updated_at", "2023-05-31 04:20:46.578144"]]
+  ↳ app/controllers/friends_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/friends_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/friends/1
+Completed 302 Found in 8ms (ActiveRecord: 1.8ms | Allocations: 2843)
+
+
+Started GET "/friends/1" for ::1 at 2023-05-31 09:50:46 +0530
+Processing by FriendsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/_friend.html.erb (Duration: 0.6ms | Allocations: 313)
+  Rendered friends/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1463)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 82)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3801)
+Completed 200 OK in 11ms (Views: 6.8ms | ActiveRecord: 0.2ms | Allocations: 6338)
+
+
+Started GET "/friends" for ::1 at 2023-05-31 09:50:51 +0530
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:6
+  Rendered friends/_friend.html.erb (Duration: 0.2ms | Allocations: 25)
+  Rendered friends/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 826)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 3163)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.3ms | Allocations: 3424)
+
+
+Started GET "/friends/1" for ::1 at 2023-05-31 09:50:52 +0530
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered friends/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 535)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 2863)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.1ms | Allocations: 3555)
+
+
+Started GET "/friends" for ::1 at 2023-05-31 09:50:53 +0530
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:6
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered friends/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 820)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3157)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 3416)
+
+
+Started GET "/friends/new" for ::1 at 2023-05-31 09:50:55 +0530
+Processing by FriendsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 3.9ms | Allocations: 1641)
+  Rendered friends/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1721)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 4071)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 4334)
+
+
+Started POST "/friends" for ::1 at 2023-05-31 09:51:19 +0530
+Processing by FriendsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "friend"=>{"first_name"=>"Aditi", "last_name"=>"Jain", "email"=>"jn.adi95@gmail.com", "phone"=>"9892166550", "twitter"=>"jnadi95"}, "commit"=>"Create Friend"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/friends_controller.rb:27:in `block in create'
+  [1m[36mFriend Create (1.0ms)[0m  [1m[32mINSERT INTO "friends" ("first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Aditi"], ["last_name", "Jain"], ["email", "jn.adi95@gmail.com"], ["phone", "9892166550"], ["twitter", "jnadi95"], ["created_at", "2023-05-31 04:21:19.337358"], ["updated_at", "2023-05-31 04:21:19.337358"]]
+  ↳ app/controllers/friends_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/friends_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/friends/2
+Completed 302 Found in 9ms (ActiveRecord: 2.6ms | Allocations: 2088)
+
+
+Started GET "/friends/2" for ::1 at 2023-05-31 09:51:19 +0530
+Processing by FriendsController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered friends/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 568)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2896)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.1ms | Allocations: 3586)
+
+
+Started GET "/friends" for ::1 at 2023-05-31 09:51:20 +0530
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:6
+  Rendered friends/_friend.html.erb (Duration: 0.2ms | Allocations: 25)
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered friends/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 970)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 3307)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.2ms | Allocations: 3566)
+
+
+Started GET "/friends/1" for ::1 at 2023-05-31 09:51:26 +0530
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFriend Load (0.4ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered friends/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 521)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2849)
+Completed 200 OK in 11ms (Views: 7.5ms | ActiveRecord: 0.4ms | Allocations: 3536)
+
+
+Started GET "/friends" for ::1 at 2023-05-31 09:55:25 +0530
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:6
+  Rendered friends/_friend.html.erb (Duration: 0.3ms | Allocations: 25)
+  Rendered friends/_friend.html.erb (Duration: 0.0ms | Allocations: 24)
+  Rendered friends/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 960)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 3297)
+Completed 200 OK in 15ms (Views: 12.1ms | ActiveRecord: 0.3ms | Allocations: 3554)
+
+
+Started GET "/friends" for ::1 at 2023-05-31 09:56:20 +0530
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:6
+  Rendered friends/_friend.html.erb (Duration: 1.6ms | Allocations: 301)
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered friends/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1576)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 350)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 4517)
+Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 0.2ms | Allocations: 5527)
+
+
+Started GET "/" for ::1 at 2023-05-31 09:56:22 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 114)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 2664)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 3388)
+
+
+Started GET "/friends" for ::1 at 2023-05-31 09:56:23 +0530
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:6
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered friends/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 964)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 120)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3351)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 3611)
+
+
+Started GET "/home/about" for ::1 at 2023-05-31 09:56:24 +0530
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 1.0ms | Allocations: 107)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2662)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 2910)
+
+
+Started GET "/friends" for ::1 at 2023-05-31 09:56:24 +0530
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:6
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered friends/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 968)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 120)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3355)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.1ms | Allocations: 3615)
+
+
+Started GET "/" for ::1 at 2023-05-31 09:56:25 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 127)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2540)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 2787)
+
+
+Started GET "/home/about" for ::1 at 2023-05-31 09:56:25 +0530
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 127)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2549)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 2796)
+
+
+Started GET "/friends" for ::1 at 2023-05-31 09:56:26 +0530
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:6
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered friends/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 966)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 117)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 3340)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.2ms | Allocations: 3599)
+
+
+Started GET "/friends" for ::1 at 2023-05-31 09:57:38 +0530
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:6
+  Rendered friends/_friend.html.erb (Duration: 1.0ms | Allocations: 301)
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered friends/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1561)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 427)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 4579)
+Completed 200 OK in 20ms (Views: 16.5ms | ActiveRecord: 0.2ms | Allocations: 5586)
+
+
+Started GET "/friends/new" for ::1 at 2023-05-31 09:57:39 +0530
+Processing by FriendsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 14.7ms | Allocations: 2171)
+  Rendered friends/new.html.erb within layouts/application (Duration: 16.8ms | Allocations: 2472)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 4907)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.0ms | Allocations: 5227)
+
+
+Started GET "/friends" for ::1 at 2023-05-31 09:57:41 +0530
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:6
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered friends/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 972)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3389)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.3ms | Allocations: 3649)
+
+
+Started GET "/friends/new" for ::1 at 2023-05-31 09:57:41 +0530
+Processing by FriendsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 3.0ms | Allocations: 1644)
+  Rendered friends/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1724)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 4142)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 4406)
+
+
+Started GET "/home/about" for ::1 at 2023-05-31 09:57:42 +0530
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 1.2ms | Allocations: 112)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 172)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2725)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 3397)
+
+
+Started GET "/friends" for ::1 at 2023-05-31 09:57:42 +0530
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:6
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered friends/_friend.html.erb (Duration: 0.2ms | Allocations: 24)
+  Rendered friends/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 966)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3390)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.3ms | Allocations: 3650)
+
+
+Started GET "/friends/new" for ::1 at 2023-05-31 09:57:43 +0530
+Processing by FriendsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 2.8ms | Allocations: 1653)
+  Rendered friends/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1733)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 4143)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 4407)
+
+
+Started POST "/friends" for ::1 at 2023-05-31 09:57:44 +0530
+Processing by FriendsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "friend"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "phone"=>"", "twitter"=>""}, "commit"=>"Create Friend"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/friends_controller.rb:27:in `block in create'
+  [1m[36mFriend Create (0.9ms)[0m  [1m[32mINSERT INTO "friends" ("first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", ""], ["last_name", ""], ["email", ""], ["phone", ""], ["twitter", ""], ["created_at", "2023-05-31 04:27:44.563405"], ["updated_at", "2023-05-31 04:27:44.563405"]]
+  ↳ app/controllers/friends_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/friends_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/friends/3
+Completed 302 Found in 12ms (ActiveRecord: 3.0ms | Allocations: 2099)
+
+
+Started GET "/friends/3" for ::1 at 2023-05-31 09:57:44 +0530
+Processing by FriendsController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/_friend.html.erb (Duration: 0.0ms | Allocations: 25)
+  Rendered friends/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 826)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 3239)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms | Allocations: 4056)
+
+
+Started GET "/friends/3/edit" for ::1 at 2023-05-31 09:57:46 +0530
+Processing by FriendsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/edit.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 4.6ms | Allocations: 1774)
+  Rendered friends/edit.html.erb within layouts/application (Duration: 7.3ms | Allocations: 2075)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 4502)
+Completed 200 OK in 17ms (Views: 13.4ms | ActiveRecord: 0.2ms | Allocations: 5245)
+
+
+Started GET "/friends" for ::1 at 2023-05-31 09:57:47 +0530
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:6
+  Rendered friends/_friend.html.erb (Duration: 0.2ms | Allocations: 25)
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered friends/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1095)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 3506)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.3ms | Allocations: 3766)
+
+
+Started GET "/friends" for ::1 at 2023-05-31 14:12:40 +0530
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:6
+  Rendered friends/_friend.html.erb (Duration: 0.4ms | Allocations: 25)
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered friends/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 1255)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 3666)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 3.3ms | Allocations: 3925)
+
+
+Started GET "/friends/1" for ::1 at 2023-05-31 14:12:41 +0530
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered friends/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 530)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2932)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.3ms | Allocations: 3656)
+
+
+Started DELETE "/friends/1" for ::1 at 2023-05-31 14:12:42 +0530
+Processing by FriendsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mFriend Load (0.4ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mFriend Destroy (1.7ms)[0m  [1m[31mDELETE FROM "friends" WHERE "friends"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (33.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/friends
+Completed 302 Found in 44ms (ActiveRecord: 35.2ms | Allocations: 2202)
+
+
+Started GET "/friends" for ::1 at 2023-05-31 14:12:42 +0530
+Processing by FriendsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:6
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered friends/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 981)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3392)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.1ms | Allocations: 3654)
+
+
+Started GET "/friends/2" for ::1 at 2023-05-31 14:12:43 +0530
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFriend Load (2.4ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered friends/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 541)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 2943)
+Completed 200 OK in 12ms (Views: 6.6ms | ActiveRecord: 2.4ms | Allocations: 3630)
+
+
+Started DELETE "/friends/2" for ::1 at 2023-05-31 14:12:44 +0530
+Processing by FriendsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mFriend Destroy (1.0ms)[0m  [1m[31mDELETE FROM "friends" WHERE "friends"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/friends
+Completed 302 Found in 11ms (ActiveRecord: 3.2ms | Allocations: 2180)
+
+
+Started GET "/friends" for ::1 at 2023-05-31 14:12:44 +0530
+Processing by FriendsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:6
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered friends/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 849)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 3271)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.1ms | Allocations: 3534)
+
+
+Started GET "/friends/3" for ::1 at 2023-05-31 14:12:45 +0530
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/_friend.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered friends/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 547)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 2963)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.1ms | Allocations: 3651)
+
+
+Started DELETE "/friends/3" for ::1 at 2023-05-31 14:12:46 +0530
+Processing by FriendsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"3"}
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mFriend Destroy (0.7ms)[0m  [1m[31mDELETE FROM "friends" WHERE "friends"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/friends
+Completed 302 Found in 11ms (ActiveRecord: 2.8ms | Allocations: 2179)
+
+
+Started GET "/friends" for ::1 at 2023-05-31 14:12:46 +0530
+Processing by FriendsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:6
+  Rendered friends/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 708)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 155)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 3137)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.1ms | Allocations: 3400)
+
+
+Started GET "/friends/new" for ::1 at 2023-05-31 14:13:15 +0530
+Processing by FriendsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 4.5ms | Allocations: 1639)
+  Rendered friends/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1719)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 4129)
+Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 4392)
+
+
+Started GET "/friends/new" for ::1 at 2023-06-01 10:44:41 +0530
+Processing by FriendsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 54.1ms | Allocations: 1645)
+  Rendered friends/new.html.erb within layouts/application (Duration: 58.1ms | Allocations: 1725)
+  Rendered home/_header.html.erb (Duration: 2.4ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 104.1ms | Allocations: 4149)
+Completed 200 OK in 145ms (Views: 120.6ms | Allocations: 4412)
+
+
